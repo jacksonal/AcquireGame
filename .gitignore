@@ -43,7 +43,10 @@ Temporary Items
 .apdisk
 
 # Project compiled output
-bin\
 bin/
 obj/
-obj\
+
+# .suo files
+*.suo
+# GhostDoc files
+*GhostDoc*

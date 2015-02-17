@@ -10,7 +10,7 @@
         <TextBlock Text="" Name="u_blk_Out" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">
             <TextBox Name="u_txt_Name" Text="Name?" VerticalAlignment="Top" HorizontalAlignment="Center" Width="100"/>
-            <Button Content="OK" Click="Button_Click"/>
+            <Button Content="OK"/>
         </StackPanel>
     </Grid>
 </Window>
