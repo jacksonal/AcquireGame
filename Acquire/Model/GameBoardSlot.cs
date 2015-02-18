@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Acquire.Model
 {
-    class GameBoardSlot : IGameBoardSlot
+    public class GameBoardSlot : IGameBoardSlot
     {
         private Util.enHorizontalSlots XCoord;
         private Util.enVerticalSlots YCoord;

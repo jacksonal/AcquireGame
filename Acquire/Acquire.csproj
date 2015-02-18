@@ -59,6 +59,19 @@
     </ApplicationDefinition>
     <Compile Include="Test\GameBoardTests.cs" />
     <Compile Include="Test\Implementation\TestGameBoard.cs" />
+    <Compile Include="ViewModel\GameBoardColumnViewModel.cs" />
+    <Compile Include="ViewModel\GameBoardSlotViewModel.cs" />
+    <Compile Include="ViewModel\GameBoardViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="View\GameBoardColumnView.xaml.cs">
+      <DependentUpon>GameBoardColumnView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBoardSlotView.xaml.cs">
+      <DependentUpon>GameBoardSlotView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBoardView.xaml.cs">
+      <DependentUpon>GameBoardView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +85,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\GameBoardColumnView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GameBoardSlotView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GameBoardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\GameBoard.cs" />

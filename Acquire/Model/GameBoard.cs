@@ -42,7 +42,20 @@ namespace Acquire.Model
 			return ret;
 		}
 
-		protected  Dictionary<Util.enHorizontalSlots,Dictionary<Util.enVerticalSlots,IGameBoardSlot>> m_Board;
+		//internal IEnumerable<IGameBoardSlot> BoardSlots
+		//{
+		//	get
+		//	{
+		//		foreach(Dictionary<Util.enVerticalSlots,IGameBoardSlot> col in m_Board.Values)
+		//		{
+		//			foreach(IGameBoardSlot slot in col.Values)
+		//			{
+		//				yield return slot;
+		//			}
+		//		}
+		//	}
+		//}
+		protected Dictionary<Util.enHorizontalSlots, Dictionary<Util.enVerticalSlots, IGameBoardSlot>> m_Board;
 		
 		private void BuildGameBoard()
 		{

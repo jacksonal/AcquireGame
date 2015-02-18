@@ -1,5 +1,7 @@
 ﻿using Acquire.Model;
 using Acquire.Model.Interfaces;
+using Acquire.View;
+using Acquire.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +26,11 @@ namespace Acquire
     {
         public MainWindow()
         {
+			IGameEngine Engine = new GameEngine();
+			GameBoardViewModel vm = new GameBoardViewModel(Engine);
+			
             InitializeComponent();
-            IGameEngine Engine = new GameEngine();
+			u_grd_Main.Children.Add(new GameBoardView(vm));
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acquire.Model.Interfaces
 {
-    interface IHotel
+    public interface IHotel
     {
         string Name { get; }
 

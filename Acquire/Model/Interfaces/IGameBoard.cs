@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acquire.Model.Interfaces
 {
-    interface IGameBoard
+    public interface IGameBoard
     {
         IGameBoardSlot GetSlot(Util.enHorizontalSlots XCoord, Util.enVerticalSlots YCoord);
     }

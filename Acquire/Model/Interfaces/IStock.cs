@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acquire.Model.Interfaces
 {
-    interface IStock
+    public interface IStock
     {
         IHotel Parent { get; }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acquire.Model.Interfaces
 {
-    interface IGameEngine
+    public interface IGameEngine
     {
         IGameBoard Board { get; }
 
