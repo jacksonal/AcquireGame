@@ -4,14 +4,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d"
+             xmlns:c="clr-namespace:Acquire.View.Converter"
              >
-    <Grid>
+    <UserControl.Resources>
+        <c:SlotBackColorConverter x:Key="back_color_convert"/>
+        <c:SlotTextColorConverter x:Key="text_color_convert"/>
+    </UserControl.Resources>
+    <Grid MouseUp="UIElement_OnMouseUp">
         <Border BorderBrush="Black" BorderThickness="2" Width="60" Height="60" >
-            <Grid>
+            <Grid Background="{Binding Path=IsFull, Converter={StaticResource back_color_convert}}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="1" VerticalAlignment="Center" TextAlignment="Center" Text="{Binding Path=Name}" FontSize="24" />
+                <TextBlock VerticalAlignment="Center" 
+                           TextAlignment="Center" Text="{Binding Path=Name}" 
+                           FontSize="24" Foreground="{Binding Path=IsFull, Converter={StaticResource text_color_convert}}"/>
             </Grid>
         </Border>
         

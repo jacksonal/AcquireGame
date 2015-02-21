@@ -63,6 +63,8 @@
     <Compile Include="ViewModel\GameBoardSlotViewModel.cs" />
     <Compile Include="ViewModel\GameBoardViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="View\Converter\FilledSlotColorConverter.cs" />
+    <Compile Include="View\Converter\SlotTextColorConverter.cs" />
     <Compile Include="View\GameBoardColumnView.xaml.cs">
       <DependentUpon>GameBoardColumnView.xaml</DependentUpon>
     </Compile>

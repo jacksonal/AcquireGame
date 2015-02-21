@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Acquire.ViewModel;
 
 namespace Acquire.View
 {
@@ -25,5 +26,12 @@ namespace Acquire.View
 			InitializeComponent();
 		}
 
+		private void UIElement_OnMouseUp(object sender, MouseButtonEventArgs e)
+		{
+			if (this.DataContext is GameBoardSlotViewModel)
+			{
+				((GameBoardSlotViewModel) DataContext).IsFull = !((GameBoardSlotViewModel) DataContext).IsFull;
+			}
+		}
 	}
 }
